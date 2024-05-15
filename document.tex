@@ -26,8 +26,11 @@
 
 \AtBeginSection[]{
 	\begin{frame}{Contents}
-%		\thispagestyle{empty}
 		\tableofcontents[currentsection]
+\end{frame}}
+\AtBeginSubsection[]{
+	\begin{frame}{Contents}
+		\tableofcontents[currentsection,hideothersubsections]
 \end{frame}}
 \usefonttheme{professionalfonts}
 
