@@ -423,10 +423,11 @@ See also: \verb|//Public510/d/ミーティング資料/2024/肖/document.pdf|
 			\begin{column}{0.4\textwidth}
 \begin{tikzpicture}
 	\node at (0,0){\includegraphics[height=7cm]{vdis.eps}};
+	\onslide{
 	\draw[trigon,thick] (-0.9,1.76) rectangle (-1.62,2.13);
 	\draw[trigon,thick] (-0.9,0.13) rectangle (-1.62,0.5);
 	\draw[trigon,thick] (-0.9,-1.5) rectangle (-1.62,-1.13);
-	\draw[trigon,thick] (-0.9,-3.13) rectangle (-1.62,-2.76);
+	\draw[trigon,thick] (-0.9,-3.13) rectangle (-1.62,-2.76);}
 \end{tikzpicture}
 				\end{column}
 			\begin{column}{0.6\textwidth}
@@ -445,9 +446,9 @@ See also: \verb|//Public510/d/ミーティング資料/2024/肖/document.pdf|
 					\node[anchor=west] at (3.7,0.2){{\footnotesize $ 12.35\unit{\meter \per \second}\,\mathrm{px}^{-1}$}};
 					\node[anchor=west] at (3.7,-0.3){Intercept $\approx\textcolor{red}{\num{-1292}}\unit{\meter \per \second}$};}	
 				\end{tikzpicture}
-				\onslide<2>{\begin{alertblock}{Notice}
+				\begin{alertblock}{Notice}
 					Areas where are \textcolor{trigon}{framed} make those results physically meaningless, as \textcolor{red}{intercepts} are not supposed to be minus and such huge numbers.
-				\end{alertblock}}
+				\end{alertblock}
 				\end{column}
 		\end{columns}
 \end{frame}
